@@ -22,22 +22,22 @@
                 bg-gradient-to-b from-[#7487AF] to-[#40484B]
                 h-[110px] w-[300px] p-6 rounded-lg h-[400px]">
 
-      <h1 class="text-xl mb-4">Create Account</h1>
+      <h1 class="text-xl mb-4 font-medium">Create Account</h1>
 
       <form class="flex flex-col w-full space-y-4">
         <input
-          type="text" required
+          type="text" required id="first_name" name="first_name"
           placeholder="--- Enter First Name ---"
-          class="w-full border rounded-md text-center py-2 outline-none"/>
+          class="w-full border rounded-full text-center py-2 outline-none bg-gray-400"/>
 
           <input
-          type="text" required
+          type="text" required id="last_name" name="last_name"
           placeholder="--- Enter Last Name ---"
-          class="w-full border rounded-md text-center py-2 outline-none"/>
+          class="w-full border rounded-full text-center py-2 outline-none bg-gray-400"/>
 
           <div class="grid grid-cols-3 text-center text-gray-800">
 
-            <select class="border border-black rounded-md h-[35px] py-1 w-[65px]">
+            <select class="border border-black rounded-md h-[35px] py-1 w-[65px] bg-gray-400" id="date" name="date">
               <option selected disabled>DD</option>
               <option>1</option>
               <option>2</option>
@@ -72,7 +72,7 @@
               <option>31</option>
             </select>
 
-            <select class="border border-black rounded-md h-[35px] py-1 w-[65px]"> 
+            <select class="border border-black rounded-md h-[35px] py-1 w-[65px] bg-gray-400" id="month" name="month"> 
               <option selected disabled>MM</option>
               <option>january</option>
               <option>february</option>
@@ -88,7 +88,7 @@
               <option>december</option>
             </select>
 
-            <select class="border border-black rounded-md h-[35px] py-1 w-[80px]">
+            <select class="border border-black rounded-md h-[35px] py-1 w-[80px] bg-gray-400" id="year" name="year">
               <option selected disabled>YYYY</option>
               <option>2025</option>
               <option>2024</option>
@@ -141,16 +141,16 @@
           </div>
 
           <input
-          type="email" required
+          type="email" required id="signup_wala_mail" name="signup_wala_mail"
           placeholder="--- Enter E-Mail Address ---"
-          class="w-full border rounded-md text-center py-2 outline-none"/>
+          class="w-full border rounded-full text-center py-2 outline-none bg-gray-400"/>
 
-          <input type="password" required
+          <input type="password" required id="signup_wala_passwd" name="signup_wala_passwd"
           placeholder="--- Enter Your Password ---" 
-          class="w-full border rounded-md text-center py-1.5 outline-none">
+          class="w-full border rounded-full text-center py-1.5 outline-none bg-gray-400">
 
           <div class="flex items-center justify-center">
-          <button class="bg-black text-white border-black w-[70px] h-[30px] rounded-md outline-none text-center "> sign up</button>
+          <button class="bg-black text-white border-black w-[90px] h-[30px] rounded-sm outline-none text-center " id="signup_btn"> sign up</button>
             </div>
 
             
