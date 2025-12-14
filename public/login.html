@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex items-center justify-center h-screen bg-[url('/assets/6cbb36a34afe45944dc1280aed5f9c0c.jpg')] bg-cover bg-center">
+
+  <div class="rounded-lg p-14 mx-10 w-[900px] h-[500px] bg-[#9B99CE] grid grid-cols-2">
+
+    
+    <div class="flex flex-col items-center justify-center">
+      <img src="assets/3703.gif" alt="hii wala gif" class="hidden sm:block sm:w-75 rounded-md"/>
+      <br>
+      <h1 class="sm:block">c'mon, login now :) </h1>
+    </div>
+
+    
+    <div class="flex flex-col items-center justify-start justify-self-end
+                bg-gradient-to-b from-[#7487AF] to-[#40484B]
+                h-[110px] w-[300px] p-6 rounded-lg h-[400px]">
+
+      <h1 class="text-xl mb-4 font-medium">Login to your Account</h1>
+
+      <form class="flex flex-col w-full space-y-4" id="loginForm">
+ 
+
+          <input
+          type="email" required id="login_wala_mail" name="mail"
+          placeholder="--- Enter E-Mail Address ---"
+          class="w-full border mt-8 rounded-full text-center py-2 outline-none bg-gray-400"/>
+
+          <input type="password" required id="login_wala_passwd" name="pswd"
+          placeholder="--- Enter Your Password ---" 
+          class="w-full border rounded-full text-center py-1.5 outline-none bg-gray-400">
+
+          <div class="grid grid-cols-2">
+          <h3 class="text-white text-xs" id="passwd_bhool_gaya">forgot password?</h3>
+          <h3 class="text-white text-xs cursor-pointer" id="naya_acc_banao">create new account</h3>
+          </div>
+
+          <div class="flex items-center justify-center">
+          <button class="bg-black text-white border-black w-[70px] h-[30px] rounded-md outline-none text-center " id="login_btn" type="submit"> Login </button>
+            </div>
+
+            
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+  </body>
+</html>
